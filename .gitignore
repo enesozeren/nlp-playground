@@ -1,1 +1,6 @@
+# Fine-tuning files
 test_trainer
+gpt_sentiment_classifier
+
+# Others
+.DS_Store
