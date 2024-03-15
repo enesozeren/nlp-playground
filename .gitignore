@@ -4,3 +4,4 @@ gpt_sentiment_classifier
 
 # Others
 .DS_Store
+__pycache__
