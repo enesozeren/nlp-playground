@@ -15,8 +15,6 @@ class RNN(nn.Module):
         self.i2o = nn.Linear(in_features = hidden_size, out_features = output_size)
         # tanh activation
         self.tanh = nn.Tanh()
-        # softmax activation
-        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, input, prev_hidden):
         # Concat previous hidden state and input
@@ -24,7 +22,7 @@ class RNN(nn.Module):
         # Calculate the current hidden
         current_hidden = self.tanh(self.i2h(prev_hidden_and_input))
         # Calculate the output
-        output = self.softmax(self.i2o(current_hidden))
+        output = self.i2o(current_hidden)
 
         return output, current_hidden
     

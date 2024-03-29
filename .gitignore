@@ -3,5 +3,5 @@ test_trainer
 gpt_sentiment_classifier
 
 # Others
-.DS_Store
 __pycache__
+.DS_Store
