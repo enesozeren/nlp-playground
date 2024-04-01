@@ -5,3 +5,4 @@ gpt_sentiment_classifier
 # Others
 __pycache__
 .DS_Store
+.venv
